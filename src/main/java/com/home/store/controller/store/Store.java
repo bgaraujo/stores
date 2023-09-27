@@ -5,16 +5,16 @@ import com.home.store.dto.store.StoreResponseDTO;
 import com.home.store.service.StoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
 
-
+@RestController
 public class Store implements StoreEndpoint{
 
     @Autowired
     private StoreService storeService;
 
     @Override
-    public ResponseEntity<StoreResponseDTO> create(StoreDTO storeDTO) {
-        storeService.save(storeDTO);
-        return ResponseEntity.ok(new StoreResponseDTO());
+    public ResponseEntity<StoreDTO> create(StoreDTO storeDTO) {
+        return ResponseEntity.ok(storeService.save(storeDTO));
     }
 }

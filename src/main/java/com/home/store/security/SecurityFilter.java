@@ -21,7 +21,7 @@ public class SecurityFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        var tokenJWT = getToken(request);
+        String tokenJWT = getToken(request);
         if(tokenJWT != null) {
             SecurityContextHolder.getContext().setAuthentication(new Gson().fromJson(tokenService.getSubject(tokenJWT), UsernamePasswordAuthenticationToken.class));
         }
@@ -29,7 +29,7 @@ public class SecurityFilter extends OncePerRequestFilter {
     }
 
     private String getToken(HttpServletRequest request) {
-        var authorizationHeader = request.getHeader("Authorization");
+        String authorizationHeader = request.getHeader("Authorization");
         if(authorizationHeader != null) {
             return authorizationHeader.replace("Bearer ", "");
         }

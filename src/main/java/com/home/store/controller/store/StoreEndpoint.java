@@ -11,5 +11,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface StoreEndpoint {
 
     @PostMapping
-    ResponseEntity<StoreResponseDTO> create(@RequestBody StoreDTO storeDTO);
+    ResponseEntity<StoreDTO> create(@RequestBody StoreDTO storeDTO);
 }

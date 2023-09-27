@@ -1,9 +1,10 @@
-package com.home.store.entities;
+package com.home.store.entities.document;
 
+import com.home.store.entities.store.Store;
 import com.home.store.enums.DocumentType;
+import jakarta.persistence.*;
 import lombok.Data;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity

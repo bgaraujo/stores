@@ -1,8 +1,7 @@
-package com.home.store.entities;
+package com.home.store.entities.address;
 
+import jakarta.persistence.*;
 import lombok.Data;
-
-import javax.persistence.*;
 
 @Data
 @Entity
@@ -18,7 +17,6 @@ public class Address {
     private String city;
     private String complement;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "store_id", referencedColumnName = "id")
-    private Store store;
+    @OneToOne
+    private Location location;
 }

@@ -1,6 +1,6 @@
 package com.home.store.repository;
 
-import com.home.store.entities.Store;
+import com.home.store.entities.store.Store;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 

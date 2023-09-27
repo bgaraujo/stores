@@ -1,9 +1,10 @@
-package com.home.store.entities;
+package com.home.store.entities.store;
 
-import com.home.store.dto.address.AddressDTO;
+import com.home.store.entities.address.Address;
+import com.home.store.entities.document.Document;
+import jakarta.persistence.*;
 import lombok.Data;
 
-import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -14,8 +15,11 @@ public class Store {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @OneToMany
+    private List<OpeningHours> openingHours;
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "store")
     private List<Document> documents;
-    @OneToOne(mappedBy = "store")
+    @OneToOne
     private Address address;
+    private Long deliverTimeInMinutes;
 }
