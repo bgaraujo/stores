@@ -1,6 +1,7 @@
 package com.home.store.service;
 
-import com.home.store.dto.store.StoreDTO;
+
+import com.home.dtos.store.StoreDTO;
 
 public interface StoreService {
     StoreDTO save(StoreDTO storeD);

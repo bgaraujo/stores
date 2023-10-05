@@ -1,6 +1,6 @@
 package com.home.store.controller.meal;
 
-import com.home.store.dto.meal.MealDTO;
+import com.home.dtos.meal.MealDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

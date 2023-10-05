@@ -1,6 +1,6 @@
 package com.home.store.controller.meal;
 
-import com.home.store.dto.meal.MealDTO;
+import com.home.dtos.meal.MealDTO;
 import com.home.store.service.MealService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

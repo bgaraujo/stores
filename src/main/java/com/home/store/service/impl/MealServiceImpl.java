@@ -1,7 +1,6 @@
 package com.home.store.service.impl;
 
-import com.home.store.dto.meal.MealDTO;
-import com.home.store.entities.meal.CuisineType;
+import com.home.dtos.meal.MealDTO;
 import com.home.store.entities.meal.Meal;
 import com.home.store.entities.store.Store;
 import com.home.store.repository.CuisineTypeRepository;
@@ -9,7 +8,6 @@ import com.home.store.repository.MealRepository;
 import com.home.store.repository.SideDishesRepository;
 import com.home.store.repository.StoreRepository;
 import com.home.store.service.MealService;
-import com.home.store.service.StoreService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.home.store.service.impl;
 
-import com.home.store.dto.meal.CuisineTypeDTO;
+import com.home.dtos.meal.CuisineTypeDTO;
 import com.home.store.entities.meal.CuisineType;
 import com.home.store.repository.CuisineTypeRepository;
 import com.home.store.service.CuisineService;

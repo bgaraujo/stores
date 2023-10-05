@@ -1,6 +1,6 @@
 package com.home.store.controller.cuisine;
 
-import com.home.store.dto.meal.CuisineTypeDTO;
+import com.home.dtos.meal.CuisineTypeDTO;
 import com.home.store.service.CuisineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

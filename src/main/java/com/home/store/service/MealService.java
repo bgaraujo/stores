@@ -1,6 +1,7 @@
 package com.home.store.service;
 
-import com.home.store.dto.meal.MealDTO;
+
+import com.home.dtos.meal.MealDTO;
 
 public interface MealService {
 

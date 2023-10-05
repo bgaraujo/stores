@@ -1,7 +1,5 @@
 package com.home.store.entities.store;
 
-import com.home.store.entities.address.Address;
-import com.home.store.entities.document.Document;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,9 +15,8 @@ public class Store {
     private String name;
     @OneToMany
     private List<OpeningHours> openingHours;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "store")
+    @OneToMany
     private List<Document> documents;
-    @OneToOne
-    private Address address;
+    private Long addressId;
     private Long deliverTimeInMinutes;
 }

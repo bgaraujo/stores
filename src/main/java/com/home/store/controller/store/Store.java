@@ -1,7 +1,6 @@
 package com.home.store.controller.store;
 
-import com.home.store.dto.store.StoreDTO;
-import com.home.store.dto.store.StoreResponseDTO;
+import com.home.dtos.store.StoreDTO;
 import com.home.store.service.StoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
